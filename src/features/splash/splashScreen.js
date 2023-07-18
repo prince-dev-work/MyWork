@@ -6,7 +6,7 @@ import { themes } from '../../themes/theme'
 const SplashScreen = () => {
   return (
     <View>
-      <Text style={{fontSize:ms(40),fontFamily:themes.light.fontFamily.bold}}>S</Text>
+      <Text style={{fontSize:ms(40),fontFamily:themes.light.fontFamily.bold}}>Splash</Text>
     </View>
   )
 }
