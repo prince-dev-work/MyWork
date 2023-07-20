@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {APP_SCREEN, AUTH_SCREEN, SPLASH_SCREEN} from '../constants/stack';
@@ -10,6 +10,9 @@ import AppStack from './appStack';
 const Stack = createStackNavigator();
 
 const MainStack = () => {
+ 
+
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -17,7 +20,7 @@ const MainStack = () => {
         screenOptions={{headerShown: false}}>
         <Stack.Screen name={SPLASH_SCREEN} component={SplashScreen} />
         <Stack.Screen name={AUTH_SCREEN} component={AuthStack} />
-        <Stack.Screen name={APP_SCREEN} component={AppStack} />
+        <Stack.Screen name={APP_SCREEN} component={AppStack} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
