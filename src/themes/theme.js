@@ -1,6 +1,10 @@
 export const themes = {
   light: {
-    color: {},
+    color: {
+      white:"#ffffff",
+      black:"#000000",
+      lightGreen:'#03BD5D'
+    },
     fontFamily: {
       regular: 'Inter-Regular', //400
       medium: 'Inter-Medium',//500
