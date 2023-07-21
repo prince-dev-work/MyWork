@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     borderRadius:ms(4)
   },
   buttonText: {
-    color: themes.light.color.lightGreen, 
+    color: themes.light.color.white, 
     fontSize: ms(17),
     fontFamily: themes.light.fontFamily.bold,
   },
