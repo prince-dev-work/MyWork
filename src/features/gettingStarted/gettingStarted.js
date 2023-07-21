@@ -25,7 +25,8 @@ const GettingStarted = ({navigation}) => {
       <Button title="Sign in"  press={() =>
         navigation.navigate('login')
       }/>
-      <TextButton textDetail="Don’t have an ID?" text="Create now"/>
+      <TextButton 
+       textDetail="Don’t have an ID?" text="Create now" press={()=>navigation.navigate('register')}/>
       </View>
    
       
@@ -33,30 +34,30 @@ const GettingStarted = ({navigation}) => {
   );
 };
 const styles = StyleSheet.create({
-  viewMain: {
+   viewMain: {
     // flexGrow: 1,
     flex:1,
     backgroundColor: themes.light.color.white,
     justifyContent: 'center',
-    alignItems: 'center',
-  },
-  view: {
+     alignItems: 'center',
+   },
+   view: {
    
     marginTop: ms(247),
     marginBottom: ms(430.97),
-  },
+   },
 
-  Textstyle: {
+   Textstyle: {
     fontSize: ms(20),
-    fontFamily: themes.light.fontFamily.light,
+     fontFamily: themes.light.fontFamily.light,
     textAlign:'center',
-    color: themes.light.color.black,
-  },
-  textContainer: {
+     color: themes.light.color.black,
+   },
+   textContainer: {
   
     paddingTop: ms(20),
-    paddingLeft: ms(16),
-    paddingright: ms(16),
-  },
+     paddingLeft: ms(16),
+     paddingright: ms(16),
+   },
 });
 export default GettingStarted;
